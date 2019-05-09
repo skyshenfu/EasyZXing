@@ -222,7 +222,8 @@ final class CameraConfigurationManager {
 
   private void doSetTorch(Camera.Parameters parameters, boolean newSetting, boolean safeMode) {
     CameraConfigurationUtils.setTorch(parameters, newSetting);
-    CameraConfigurationUtils.setBestExposure(parameters, newSetting);
+    //设置曝光的
+    //CameraConfigurationUtils.setBestExposure(parameters, newSetting);
   }
 
 
