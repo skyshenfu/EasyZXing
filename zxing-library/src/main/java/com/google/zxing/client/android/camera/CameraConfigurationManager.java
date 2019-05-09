@@ -15,7 +15,6 @@
  */
 
 package com.google.zxing.client.android.camera;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Point;
@@ -121,9 +120,9 @@ final class CameraConfigurationManager {
     display.getSize(theScreenResolution);
     screenResolution = theScreenResolution;
     Log.i(TAG, "Screen resolution in current orientation: " + screenResolution);
-    cameraResolution = CameraConfigurationUtils.findBestPreviewSizeValue(parameters, screenResolution);
+    cameraResolution = CameraConfigurationUtil.findBestPreviewSizeValue(parameters, screenResolution);
     Log.i(TAG, "Camera resolution: " + cameraResolution);
-    bestPreviewSize = CameraConfigurationUtils.findBestPreviewSizeValue(parameters, screenResolution);
+    bestPreviewSize = CameraConfigurationUtil.findBestPreviewSizeValue(parameters, screenResolution);
     Log.i(TAG, "Best available preview size: " + bestPreviewSize);
 
     boolean isScreenPortrait = screenResolution.x < screenResolution.y;
@@ -141,7 +140,6 @@ final class CameraConfigurationManager {
 
     Camera theCamera = camera.getCamera();
     Camera.Parameters parameters = theCamera.getParameters();
-
     if (parameters == null) {
       Log.w(TAG, "Device error: no camera parameters are available. Proceeding without configuration.");
       return;
@@ -157,7 +155,7 @@ final class CameraConfigurationManager {
 
     initializeTorch(parameters, prefs, safeMode);
 
-    CameraConfigurationUtils.setFocus(
+    CameraConfigurationUtil.setFocus(
         parameters,
         true,
         true,
@@ -221,9 +219,9 @@ final class CameraConfigurationManager {
   }
 
   private void doSetTorch(Camera.Parameters parameters, boolean newSetting, boolean safeMode) {
-    CameraConfigurationUtils.setTorch(parameters, newSetting);
+    CameraConfigurationUtil.setTorch(parameters, newSetting);
     //设置曝光的
-    //CameraConfigurationUtils.setBestExposure(parameters, newSetting);
+    //CameraConfigurationUtil.setBestExposure(parameters, newSetting);
   }
 
 

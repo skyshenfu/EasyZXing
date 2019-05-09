@@ -265,10 +265,18 @@ public final class CameraManager {
         // Called early, before init even finished
         return null;
       }
-      rect.left = rect.left * cameraResolution.x / screenResolution.x;
-      rect.right = rect.right * cameraResolution.x / screenResolution.x;
-      rect.top = rect.top * cameraResolution.y / screenResolution.y;
-      rect.bottom = rect.bottom * cameraResolution.y / screenResolution.y;
+      if (screenResolution.x < screenResolution.y) {// 下面为竖屏模式
+        rect.left = framingRect.left * cameraResolution.y / screenResolution.x;
+        rect.right = framingRect.right * cameraResolution.y / screenResolution.x;
+        rect.top = framingRect.top * cameraResolution.x / screenResolution.y;
+        rect.bottom = framingRect.bottom * cameraResolution.x / screenResolution.y;
+      } else {
+        // 下面为横屏模式
+        rect.left = framingRect.left * cameraResolution.x / screenResolution.x;
+        rect.right = framingRect.right * cameraResolution.x / screenResolution.x;
+        rect.top = framingRect.top * cameraResolution.y / screenResolution.y;
+        rect.bottom = framingRect.bottom * cameraResolution.y / screenResolution.y;
+      }
       framingRectInPreview = rect;
     }
     return framingRectInPreview;
@@ -326,9 +334,24 @@ public final class CameraManager {
     if (rect == null) {
       return null;
     }
-    // Go ahead and assume it's YUV rather than die.
-    return new PlanarYUVLuminanceSource(data, width, height, rect.left, rect.top,
-                                        rect.width(), rect.height(), false);
+    PlanarYUVLuminanceSource source;
+    Point point = configManager.getScreenResolution();
+    if (point.x < point.y) {
+      byte[] rotatedData = new byte[data.length];
+      int newWidth = height;
+      int newHeight = width;
+      for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++)
+          rotatedData[x * newWidth + newWidth - 1 - y] = data[x + y * width];
+      }
+
+      source = new PlanarYUVLuminanceSource(rotatedData, newWidth, newHeight,
+              rect.left, rect.top, rect.width(), rect.height(), false);
+    } else {
+      source = new PlanarYUVLuminanceSource(data, width, height,
+              rect.left, rect.top, rect.width(), rect.height(), false);
+    }
+    return source;
   }
   public synchronized boolean getTorchStatus() {
     OpenCamera theCamera = camera;
