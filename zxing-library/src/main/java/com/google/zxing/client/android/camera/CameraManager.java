@@ -49,7 +49,6 @@ public final class CameraManager {
   private final Context context;
   private final CameraConfigurationManager configManager;
   private OpenCamera camera;
-  private AutoFocusManager autoFocusManager;
   private Rect framingRect;
   private Rect framingRectInPreview;
   private boolean initialized;
@@ -57,6 +56,8 @@ public final class CameraManager {
   private int requestedCameraId = OpenCameraInterface.NO_REQUESTED_CAMERA;
   private int requestedFramingRectWidth;
   private int requestedFramingRectHeight;
+  private AutoFocusManager autoFocusManager;
+
   /**
    * Preview frames are delivered here, which we pass on to the registered handler. Make sure to
    * clear the handler so it will only receive one message.
@@ -97,6 +98,7 @@ public final class CameraManager {
 
     Camera cameraObject = theCamera.getCamera();
     Camera.Parameters parameters = cameraObject.getParameters();
+
     String parametersFlattened = parameters == null ? null : parameters.flatten(); // Save these, temporarily
     try {
       configManager.setDesiredCameraParameters(theCamera, false);
@@ -148,6 +150,7 @@ public final class CameraManager {
       theCamera.getCamera().startPreview();
       previewing = true;
       autoFocusManager = new AutoFocusManager(context, theCamera.getCamera());
+
     }
   }
 
@@ -326,6 +329,24 @@ public final class CameraManager {
     // Go ahead and assume it's YUV rather than die.
     return new PlanarYUVLuminanceSource(data, width, height, rect.left, rect.top,
                                         rect.width(), rect.height(), false);
+  }
+  public synchronized boolean getTorchStatus() {
+    OpenCamera theCamera = camera;
+    return configManager.getTorchState(theCamera.getCamera());
+  }
+
+  /**
+   * 转换闪光灯状态
+   * @return 转换后的状态值
+   */
+  public synchronized boolean toggleTorch() {
+    if (getTorchStatus()) {
+      setTorch(false);
+      return  false ;
+    } else {
+      setTorch(true);
+      return true;
+    }
   }
 
 }

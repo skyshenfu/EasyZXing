@@ -47,7 +47,7 @@ public final class CaptureActivityHandler extends Handler {
 
   private static final String TAG = CaptureActivityHandler.class.getSimpleName();
 
-  private final CaptureActivity activity;
+  private final Activity activity;
   private final DecodeThread decodeThread;
   private State state;
   private final CameraManager cameraManager;
@@ -94,7 +94,10 @@ public final class CaptureActivityHandler extends Handler {
         }
         scaleFactor = bundle.getFloat(DecodeThread.BARCODE_SCALED_FACTOR);
       }
-      activity.handleDecode((Result) message.obj, barcode, scaleFactor);
+      if (activity instanceof CaptureActivity){
+        ((CaptureActivity)activity).handleDecode((Result) message.obj, barcode, scaleFactor);
+
+      }
 
     } else if (message.what == R.id.decode_failed) {// We're decoding as fast as possible, so when one decode fails, start another.
       state = State.PREVIEW;
@@ -161,7 +164,10 @@ public final class CaptureActivityHandler extends Handler {
     if (state == State.SUCCESS) {
       state = State.PREVIEW;
       cameraManager.requestPreviewFrame(decodeThread.getHandler(), R.id.decode);
-      activity.drawViewfinder();
+      if (activity instanceof CaptureActivity){
+        ((CaptureActivity)activity).drawViewfinder();
+
+      }
     }
   }
 

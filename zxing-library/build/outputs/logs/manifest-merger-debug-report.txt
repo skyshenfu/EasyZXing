@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
-INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-138:12
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:17:1-54:12
 	package
 		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:18:11-52
 		INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml
@@ -86,11 +86,11 @@ ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidMa
 	android:name
 		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:38:17-53
 application
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:40:3-136:17
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:40:3-52:17
 activity#com.google.zxing.client.android.CaptureActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:41:5-83:16
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:41:5-51:16
 	android:screenOrientation
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:42:15-58
+		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:42:15-51
 	android:clearTaskOnLaunch
 		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:43:15-47
 	android:stateNotNeeded
@@ -101,144 +101,16 @@ ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidMa
 		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:45:15-50
 	android:name
 		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:41:15-46
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:47:7-50:23
-action#android.intent.action.MAIN
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:48:9-60
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:48:17-58
-category#android.intent.category.LAUNCHER
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:49:9-68
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:49:19-66
 intent-filter#action:name:com.google.zxing.client.android.SCAN+category:name:android.intent.category.DEFAULT
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:51:7-54:23
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:47:7-50:23
 action#com.google.zxing.client.android.SCAN
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:52:9-70
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:48:9-70
 	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:52:17-68
+		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:48:17-68
 category#android.intent.category.DEFAULT
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:53:9-67
+ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:49:9-67
 	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:53:19-65
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:zxing.appspot.com+data:path:/scan+data:scheme:http
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:56:7-61:23
-action#android.intent.action.VIEW
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:57:9-60
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:57:17-58
-category#android.intent.category.BROWSABLE
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:59:9-69
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:59:19-67
-data
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:60:9-92
-	android:path
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:60:70-90
-	android:host
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:60:37-69
-	android:scheme
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:60:15-36
-	android:mimeType
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:97:15-46
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.google.com+data:path:/m/products/scan+data:scheme:http
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:63:7-68:23
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.google.co.uk+data:path:/m/products/scan+data:scheme:http
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:70:7-75:23
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:scan+data:path:/+data:scheme:zxing
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:77:7-82:23
-activity#com.google.zxing.client.android.PreferencesActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:84:5-86:46
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:86:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:85:15-55
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:84:15-50
-activity#com.google.zxing.client.android.encode.EncodeActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:87:5-105:16
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:88:15-44
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:87:15-52
-intent-filter#action:name:com.google.zxing.client.android.ENCODE+category:name:android.intent.category.DEFAULT
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:89:7-92:23
-action#com.google.zxing.client.android.ENCODE
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:90:9-72
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:90:17-70
-intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/x-vcard
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:94:7-98:23
-action#android.intent.action.SEND
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:95:9-60
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:95:17-58
-intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:100:7-104:23
-activity#com.google.zxing.client.android.book.SearchBookContentsActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:106:5-114:16
-	android:screenOrientation
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:109:15-58
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:108:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:107:15-47
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:106:15-62
-intent-filter#action:name:com.google.zxing.client.android.SEARCH_BOOK_CONTENTS+category:name:android.intent.category.DEFAULT
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:110:7-113:23
-action#com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:111:9-86
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:111:17-84
-activity#com.google.zxing.client.android.share.ShareActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:115:5-122:16
-	android:screenOrientation
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:117:15-47
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:116:15-44
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:115:15-50
-intent-filter#action:name:com.google.zxing.client.android.SHARE+category:name:android.intent.category.DEFAULT
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:118:7-121:23
-action#com.google.zxing.client.android.SHARE
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:119:9-71
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:119:17-69
-activity#com.google.zxing.client.android.history.HistoryActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:123:5-125:46
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:125:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:124:15-52
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:123:15-54
-activity#com.google.zxing.client.android.share.BookmarkPickerActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:126:5-128:46
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:128:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:127:15-59
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:126:15-59
-activity#com.google.zxing.client.android.share.AppPickerActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:129:5-131:46
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:131:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:130:15-54
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:129:15-54
-activity#com.google.zxing.client.android.HelpActivity
-ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:132:5-135:46
-	android:screenOrientation
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:134:15-47
-	android:stateNotNeeded
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:135:15-44
-	android:label
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:133:15-48
-	android:name
-		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:132:15-43
+		ADDED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml:49:19-65
 uses-sdk
 INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/zty/Desktop/project/ZxingDemo/zxing-library/src/main/AndroidManifest.xml

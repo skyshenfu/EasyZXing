@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.RejectedExecutionException;
 
-import com.google.zxing.client.android.PreferencesActivity;
 
 @SuppressWarnings("deprecation") // camera APIs
 final class AutoFocusManager implements Camera.AutoFocusCallback {
@@ -52,9 +51,7 @@ final class AutoFocusManager implements Camera.AutoFocusCallback {
     this.camera = camera;
     SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     String currentFocusMode = camera.getParameters().getFocusMode();
-    useAutoFocus =
-        sharedPrefs.getBoolean(PreferencesActivity.KEY_AUTO_FOCUS, true) &&
-        FOCUS_MODES_CALLING_AF.contains(currentFocusMode);
+    useAutoFocus =true;
     Log.i(TAG, "Current focus mode '" + currentFocusMode + "'; use auto focus? " + useAutoFocus);
     start();
   }

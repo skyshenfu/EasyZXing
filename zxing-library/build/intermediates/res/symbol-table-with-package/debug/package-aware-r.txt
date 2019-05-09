@@ -33,13 +33,6 @@ id history_detail
 id history_title
 id image_view
 id launch_product_query
-id menu_encode
-id menu_help
-id menu_history
-id menu_history_clear_text
-id menu_history_send
-id menu_settings
-id menu_share
 id meta_text_view
 id meta_text_view_label
 id page_number_view
@@ -72,9 +65,6 @@ layout search_book_contents
 layout search_book_contents_header
 layout search_book_contents_list_item
 layout share
-menu capture
-menu encode
-menu history
 raw beep
 string app_name
 string app_picker_name
